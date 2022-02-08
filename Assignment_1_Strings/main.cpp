@@ -89,7 +89,6 @@ int main(void) {
     cin >> entry;
 
     /*to store the exetension size and number of line in each case*/
-    int ExtensionSize[entry][4];
     int lines[entry];
 
     /*input for lines*/
