@@ -1,10 +1,18 @@
+
+
 #ifndef _ARM_GPIO_H
 #define _ARM_GPIO_H
 
+#include "GPIO.hpp"
 
-void ARM_PinMode(unsigned char PinNum, unsigned char PinMode);
-void ARM_digitalWrite(unsigned char PinNum, unsigned char Signal);
-unsigned char ARM_digitalRead(unsigned char pinNum);
 
+class ARM : public GPIO
+{
+    public:
+        void PinMode(unsigned char PinNum, unsigned char PinMode);
+        void DigitalWrite(unsigned char PinNum, unsigned char Signal);
+        unsigned char DigitalRead(unsigned char pinNum);
+
+};
 
 #endif
