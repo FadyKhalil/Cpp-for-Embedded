@@ -11,9 +11,10 @@
 
 #ifdef _AVR_GPIO_H
     #warning "You working on AVR Board"
+    #undef _ARM_GPIO_H  
 #elif _ARM_GPIO_H
     //#warning "You working on ARM Board"
-    printf("You using AVR");
+    #undef _AVR_GPIO_H
 #endif
 
 
